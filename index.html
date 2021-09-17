@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="description" content="IWT Project">
+    <meta name="author" content="Neha Jha">
+    <link rel="canonical" href="https://njha07.github.io/B519029-IWT-MicroProject/" />
+    <meta name="robots" content="index, follow">  
+    <!-- index(The search engine crawler will index the whole webpage) and follow this webpage. -->
+    
+    <!-- Required meta properties -->
+    <meta property="og:type" content="Project" />
+    <meta property="og:title" content="IWT Project" />
+    <meta property="og:description" content="Research Paper Web Page" />
+    <meta property="og:image" content="LINK TO THE IMAGE FILE" />
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS Linked -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Kaisei+Tokumin:wght@500&family=Libre+Baskerville:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@700&family=Nanum+Myeongjo:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            margin:5em;
+        }
+        .container{
+            max-width: 75em;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px 100px;
+            margin:30px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        }
+        .container .title{
+            font-size: 2.5em;
+            font-weight: 600;
+            position: relative;
+            font-family: 'Libre Baskerville', serif;
+            text-align: center;
+        }
+
+        .content form .user-details{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0 0px 0;
+        }
+        .details{
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 1.4em;
+        }
+        label{
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 1.15em;
+        }
+
+        .ed label{
+            font-size: 1.2em;
+        }
+
+        .po label{
+            font-size: 1.15em;
+        }
+
+
+        .inputCity{
+            font-family: 'Hind Siliguri', sans-serif;
+            font-size: 1em;
+        }
+
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width: calc(100% / 2 - 20px);
+        }
+        form .input-box span.details{
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        .user-details .input-box input{
+            height: 45px;
+            width: 100%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;
+        }
+        .user-details .input-box input:focus,
+        .user-details .input-box input:valid{
+            border-color: #9b59b6;
+        }
+        
+        form input[type="radio"]{
+            display: none;
+        }
+        form .button{
+            height: 45px;
+            margin: 35px 0
+        }
+        form .button input{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: linear-gradient(135deg, #71b7e6, #9b59b6);
+        }
+        form .button input:hover{
+        /* transform: scale(0.99); */
+        background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+        }
+
+        @media(max-width: 584px){
+            .container{
+            max-width: 100%;
+            }
+            form .user-details .input-box{
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            form .category{
+                width: 100%;
+            }
+            .content form .user-details{
+                max-height: 300px;
+                overflow-y: scroll;
+            }
+            .user-details::-webkit-scrollbar{
+                width: 5px;
+            }
+        }
+
+        @media(max-width: 459px){
+            .container .content .category{
+                flex-direction: column;
+            }
+        }
+
+        .footer{
+            text-align: center;
+        }
+
+        .imp{
+          color:rgb(219, 48, 48)
+        }
+
+    </style>
+
+    <title>IWT-MicroProject</title>
+
+</head>
+<body translate="no">
+
+    <!-- Navigation --> 
+
+    <div class="container">
+        <div class="title">Job application</div>
+        <br><br>
+
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">First Name <span class="imp">*</span></span>
+                        <input type="text" placeholder="Enter your first name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Last Name <span class="imp">*</span></span>
+                        <input type="text" placeholder="Enter your last name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email <span class="imp">*</span></span>
+                        <input type="text" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Alternate/ Instituional Email ID</span>
+                      <input type="text" placeholder="Enter another email" required>
+                  </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number <span class="imp">*</span></span>
+                        <input type="text" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                      <span class="details">Date of Birth <span class="imp">*</span></span>
+                      <input type="text" placeholder="Enter your date of birth" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details"><br>Address</span>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="inputAddress" style="font-family: 'Hind Siliguri', sans-serif; font-size: 1.13em;">Street Address <span class="imp">*</span></label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity" style="font-family: 'Hind Siliguri', sans-serif; font-size: 1.13em;">City <span class="imp">*</span></label>
+                      <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputState" style="font-family: 'Hind Siliguri', sans-serif; font-size: 1.13em;">State / Province <span class="imp">*</span></label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>Andhra Pradesh</option>
+                          <option>Arunachal Pradesh</option>
+                          <option>Assam</option>
+                          <option>Bihar</option>
+                          <option>Chhattisgarh</option>
+                          <option>Goa</option>
+                          <option>Gujarat</option>
+                          <option>Himachal Pradesh</option>
+                          <option>Jharkhand</option>
+                          <option>Karnataka</option>
+                          <option>Kerala</option>
+                          <option>Madhya Pradesh</option>
+                          <option>Maharashtra</option>
+                          <option>Manipur</option>
+                          <option>Meghalaya</option>
+                          <option>Mizoram</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip" style="font-family: 'Hind Siliguri', sans-serif; font-size: 1.13em;">Postal / Zip Code <span class="imp">*</span></label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+
+                <div class="input-box">
+                  <span class="details"><br>Academic Details</span>
+                </div>
+
+                <div class="ed">
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Qualification <span class="imp">*</span></label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>PHD</option>
+                          <option>Post Graduation</option>
+                          <option>Graduation</option>
+                          <option>Intermediate</option>
+                          <option>High School</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">From (Year) <span class="imp">*</span> </label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">To (Year) <span class="imp">*</span> </label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Degree <span class="imp">*</span></label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>Bachelor of Applied Science (BAS)</option>
+                          <option>Bachelor of Fine Arts (BFA)</option>
+                          <option>Bachelor of Science (B.S.)</option>
+                          <option>Bachelor of Arts (B.A.)</option>
+                        </select>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Specialization <span class="imp">*</span></label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">University/Institute <span class="imp">*</span> </label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">Percentage <span class="imp">*</span></label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <label for="validationTooltip01">CGPA (out of 10) <span class="imp">*</span></label>
+                        <input type="text" class="form-control" id="validationTooltip01" required>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                  <span class="details"><br>Gender <span class="imp">*</span></span>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">Female</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline2">Prefer not to say</label>
+                </div>
+
+
+                <div class="input-box">
+                  <span class="details"><br>Position Details</span>
+                </div>
+
+                <div class="po">
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="validationTooltip01">Position you are applying for : <span class="imp">*</span></label>
+                      <input type="text" class="form-control" id="validationTooltip01" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationTooltip01">Available Start Date : <span class="imp">*</span></label>
+                      <input type="text" class="form-control" id="validationTooltip01" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="validationTooltip01">Desired Pay : </label>
+                      <input type="text" class="form-control" id="validationTooltip01" required>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="input-box">
+                  <span class="details"><br>Desired Employment</span>
+                </div>
+
+                <div class="custom-control-inline">
+                  <p style="font-size: 1.05em;">Employment Type <span class="imp">*</span></p>
+                </div>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value="">&nbsp;Full Time &nbsp;&nbsp;</label>
+                <label class="checkbox-inline">
+                  <input type="checkbox" value="">&nbsp;Part Time &nbsp;&nbsp;</label>
+                  <label class="checkbox-inline">
+                    <input type="checkbox" value="">&nbsp;Internship &nbsp;&nbsp;</label>
+
+                <br>
+
+                <div class="input-box">
+                  <span class="details"><br>Job Location Preference</span>
+                </div>
+
+                <div class="custom-control-inline">
+                  <p style="font-size: 1.05em;">Are you willing to work anywhere in abroad?</p>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">No</label>
+                </div>
+
+                <div class="input-box">
+                  <span class="details"><br>Upload Resume <span class="imp">*</span></span>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4 ">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input-box">
+                  <span class="details"><br>Cover Letter</span>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-8 ">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </br>
+
+                <p style="font-family: 'Hind Siliguri', sans-serif;font-size: 1.15em;">How were you referred to us?</p>
+
+                <div class="row">
+                  <div class="form-group col-md-4 ">
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>LinkedIn</option>
+                      <option>Indeed</option>
+                      <option>D2C</option>
+                    </select>
+                </div>
+                </div>
+                
+                </br></br>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                       I hereby declare that the information stated above is true to the best of my knowledge.<span class="imp">*</span>
+                      </label>
+                    </div>
+                  </div>
+
+                <div class="button">
+                <input type="submit" value="Apply">
+                </div>
+            </form>
+
+            <br><br>
+
+            <p style="text-align: center; "><a href="https://njha07.github.io/B519029-IWT-Project/" style="text-decoration: none; font-size:1.3em; color:black; font-family: 'Hind Siliguri', sans-serif;">IWT Project of <i style="color:rgb(133, 7, 9);">@NehaJha,&nbsp;B519029</i></a></p>
+
+            </div>
+        </div>
+
+
+	
+	 <!-- Footer -->
+    
+
+</body>
+</html>
